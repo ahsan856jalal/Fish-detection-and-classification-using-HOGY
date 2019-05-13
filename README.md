@@ -16,15 +16,15 @@ For YOLO , clone this repo "https://github.com/AlexeyAB/darknet.git" and make it
 
 # Steps to follow:
 
-.  Make training_data list as explained in the aforementioned link
-. edit the yolov3.cfg for lcf-15 and uwa datasets (15 & 16 classes in lcf-15 and uwa datasets respectively)
-. make separate '.names' files for lcf-15 and uwa dataset and put all classes names as mentioned in YOLO instructions
-. make separate '.data' files for each dataset. Copy contents from 'coco.data' file in yolo/cfg directory into each new file and edit classes, train, names and backup variables.
-. For evaluation, you need a pre-trained model on respected datasets. These models will be shared on request {ahsan.jalal@seecs.edu.pk, ahmad.salman@seecs.edu.pk}
-. Once you have the models and test splits, use 'YOLO_DNN/yolo_on_frames.py' to save classification results.
+1: Make training_data list as explained in the aforementioned link
+2: edit the yolov3.cfg for lcf-15 and uwa datasets (15 & 16 classes in lcf-15 and uwa datasets respectively)
+3: make separate '.names' files for lcf-15 and uwa dataset and put all classes names as mentioned in YOLO instructions
+4: make separate '.data' files for each dataset. Copy contents from 'coco.data' file in yolo/cfg directory into each new file and edit classes, train, names and backup variables.
+5: For evaluation, you need a pre-trained model on respected datasets. These models will be shared on request {ahsan.jalal@seecs.edu.pk, ahmad.salman@seecs.edu.pk}
+6: Once you have the models and test splits, use 'YOLO_DNN/yolo_on_frames.py' to save classification results.
 
-. Use 'making_gmm_optical_gray_combined_image.py' to combine GMM and optical flow outputs into one 2D frame (green channel to GMM and red to optical flow)
-. ResNet-50 models trained on lcf-15 and UWA datasets are required to classify objects detected by GMM & optical combined. Models will be shared on request {ahsan.jalal@seecs.edu.pk, ahmad.salman@seecs.edu.pk}
-. Once you have the models, use 'making_val_sort_gmm_optical_classified_text_files.py' to save classification results on gmm & optical combined input.
-. Use 'val_sort_gmm_optical_vs_yolo_f_score.py' to calculate f-score for the given dataset using GMM-optical and YOLO classified outputs which will be compared against GTs. Preference is given to YOLO output when the results are overlapping with GMM-optical.
+7: Use 'making_gmm_optical_gray_combined_image.py' to combine GMM and optical flow outputs into one 2D frame (green channel to GMM and red to optical flow)
+8: ResNet-50 models trained on lcf-15 and UWA datasets are required to classify objects detected by GMM & optical combined. Models will be shared on request {ahsan.jalal@seecs.edu.pk, ahmad.salman@seecs.edu.pk}
+9: Once you have the models, use 'making_val_sort_gmm_optical_classified_text_files.py' to save classification results on gmm & optical combined input.
+10: Use 'val_sort_gmm_optical_vs_yolo_f_score.py' to calculate f-score for the given dataset using GMM-optical and YOLO classified outputs which will be compared against GTs. Preference is given to YOLO output when the results are overlapping with GMM-optical.
 
