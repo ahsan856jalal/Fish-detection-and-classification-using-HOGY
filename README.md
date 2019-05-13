@@ -16,7 +16,7 @@ For YOLO , clone this repo "https://github.com/AlexeyAB/darknet.git" and make it
 
 # Steps to follow:
 
-1: Make training_data list as explained in the aforementioned link
+- Make training_data list as explained in the aforementioned link
 2: edit the yolov3.cfg for lcf-15 and uwa datasets (15 & 16 classes in lcf-15 and uwa datasets respectively)
 3: make separate '.names' files for lcf-15 and uwa dataset and put all classes names as mentioned in YOLO instructions
 4: make separate '.data' files for each dataset. Copy contents from 'coco.data' file in yolo/cfg directory into each new file and edit classes, train, names and backup variables.
