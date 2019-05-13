@@ -14,7 +14,6 @@ Run "Optical_flow/optical_flow_frames_per_video.py" to save Optical flow for the
 For YOLO , clone this repo "https://github.com/AlexeyAB/darknet.git" and make it according to the instructions on "https://github.com/AlexeyAB/darknet" (use libso=1 in Makefile).
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%% After successful installations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%:
 # Steps to follow:
 
 .  Make training_data list as explained in the aforementioned link
